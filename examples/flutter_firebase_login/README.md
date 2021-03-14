@@ -12,8 +12,14 @@ Example Flutter app built with `flutter_bloc` to implement login using Firebase.
 
 ## Getting Started
 
+### iOS
 1. Replace `./ios/Runner/GoogleService-Info.plist` with your own
-2. Update `info.plist`
-   1. paste-the-reversed-client-id-from-googleservice-info.plist-here
-3. Replace `./android/app/google-services.json` with your own
-3. `flutter run`
+2. Update `./ios/Runner/info.plist`
+   * Paste the `REVERSED_CLIENT_ID` from `GoogleService-Info.plist` to key `CFBundleURLSchemes` in `info.plist`
+### Android
+1. Replace `./android/app/google-services.json` with your own
+2. Update `./android/app/build.gradle` 
+   * Replace `"com.example.flutter_firebase_login"` with the `package_name` from `google-services.json`
+
+### Run the project
+1. `flutter run`
