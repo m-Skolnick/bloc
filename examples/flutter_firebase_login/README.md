@@ -12,6 +12,10 @@ Example Flutter app built with `flutter_bloc` to implement login using Firebase.
 
 ## Getting Started
 
+### Firebase
+1. Create your project
+2. Enable desired authentication options
+
 ### iOS
 1. Replace `./ios/Runner/GoogleService-Info.plist` with your own
 2. Update `./ios/Runner/info.plist`
